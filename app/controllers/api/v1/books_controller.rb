@@ -18,6 +18,16 @@ class Api::V1::BooksController < ApplicationController
         end 
     end 
 
+    def update 
+        @book = Book.find(params[:id]) 
+        if @book 
+            @book.update(book_params)
+            render json: @book 
+        else  
+            render error: {error: "Could not update the book"}, status: 400
+        end 
+    end 
+
     def destroy
         @book = Book.find(params[:id])
         if @book 
