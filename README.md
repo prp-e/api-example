@@ -20,6 +20,14 @@ Just clone this repository :
 
 ``` git clone https://github.com/prp-e/api-example``` 
 
+### Installing libraries 
+
+Go to the directory `api-example` then run this : 
+
+```bundle``` 
+
+It will install all needed packages and libraries. 
+
 ### Making the database 
 
 Create the `sqlite` database and do the migrations:
