@@ -12,4 +12,21 @@
 
 ## How to run
 
-_This part only works on Linux or similar operating systems. On Windows you can use WSL. Not tested on macOS or BSD family of operating systems, but as long as you can use `curl` and `gpg` and [RVM](https://rvm.io) on your system it will work well._. 
+_This part only works on Linux or similar operating systems. On Windows you can use WSL. Not tested on macOS or BSD family of operating systems, but as long as you can use `curl` and `gpg` and [RVM](https://rvm.io) on your system it will work well._
+
+### Getting the codes 
+
+Just clone this repository : 
+
+``` git clone https://github.com/prp-e/api-example``` 
+
+### Making the database 
+
+Create the `sqlite` database and do the migrations:
+
+```
+rails db:setup
+rails db:migrate 
+``` 
+
+_NOTE: some tutorials may recommend you use `rake` instead of `rails`, but both work just fine._
