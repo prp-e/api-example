@@ -18,6 +18,15 @@ class Api::V1::BooksController < ApplicationController
         end 
     end 
 
+    def destroy
+        @book = Book.find(params[:id])
+        if @book 
+            @book.destroy 
+            render json: {message: "Deleted succesfully."}, status: 200
+        else  
+            render error: {error: "Could not delete the book"}, status: 400 
+        end 
+    end 
 
     private
     def book_params
