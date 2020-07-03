@@ -49,7 +49,7 @@ and a rails web server will start at `http://localhost:3000` for you.
 
 ## Playing with the API
 
-This is a _CRUD_ API. CRUD stands for __C__reate, __R__ead, __U__pdate and __D__estroy. These four functions are implemented for this API and you can practice creating, reading, updating and destroying entities using this API.
+This is a _CRUD_ API. CRUD stands for **C**reate, **R**ead, **U**pdate and **D**estroy. These four functions are implemented for this API and you can practice creating, reading, updating and destroying entities using this API.
 
 For making this more understandable, I preferred to write this section using `curl`. So, I write a quick guide here for you to understand flags I've used in `curl`. 
 
