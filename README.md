@@ -38,3 +38,13 @@ rails db:migrate
 ``` 
 
 _NOTE: some tutorials may recommend you use `rake` instead of `rails`, but both work just fine._
+
+### Running the code 
+
+Just type this : 
+
+```rails s``` 
+
+and a rails web server will start at `http://localhost:3000` for you. 
+
+## Playing with the API
