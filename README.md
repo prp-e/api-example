@@ -48,3 +48,23 @@ Just type this :
 and a rails web server will start at `http://localhost:3000` for you. 
 
 ## Playing with the API
+
+This is a _CRUD_ API. CRUD stands for __C__reate, __R__ead, __U__pdate and __D__estroy. These four functions are implemented for this API and you can practice creating, reading, updating and destroying entities using this API.
+
+For making this more understandable, I preferred to write this section using `curl`. So, I write a quick guide here for you to understand flags I've used in `curl`. 
+
+### Getting started with `curl`
+
+If you use Linux or BSD, there's a chance that `curl` is installed on your system. If it's not, no worries. It's available in the repositories of most of these operating systems and you can install it. 
+
+An example of the requests is : 
+
+```curl -X POST -H "Content-Type: application/json" -d '{"name":"Foo", "item":"Bar"} http://server/api/v1/items/' ``` 
+
+In this example : 
+
+* `-X POST` : determines that our request is a _POST_ type of request. 
+* `-H "Content-Type: application/json"` : it tells the request have a custom header which determines that you're sending a JSON object to the API. 
+* `-d '{...}'` : it's just the JSON object we want to send to the API. 
+
+Most of examples of this document can be handled by knowing these basic stuff of `curl`. 
