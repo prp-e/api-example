@@ -124,3 +124,9 @@ curl -X DELETE http://localhost:3000/api/v1/books/1
 ``` 
 
 And when you request for that id, you'll get an error. 
+
+## Video tutorial 
+
+I also recorded a [video](https://youtu.be/0b8HPCs8T1M) and explained how this code works. In the video, I added `movie` model and explained that. 
+
+_NOTE: Video is in Farsi._. 
