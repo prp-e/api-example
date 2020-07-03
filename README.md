@@ -73,7 +73,9 @@ Most of examples of this document can be handled by knowing these basic stuff of
 
 For this, you just need to do this : 
 
-```curl http://localhost:3000/api/v1/books``` 
+```
+curl http://localhost:3000/api/v1/books
+``` 
 
 _NOTE : You also can open the address in a web browser and watch the list of books_. 
 
@@ -81,7 +83,9 @@ _NOTE : You also can open the address in a web browser and watch the list of boo
 
 This one, just shows a specific book. For example, considering the _id_ is 5, we can do this: 
 
-```curl http://localhost:3000/api/v1/books/5``` 
+```
+curl http://localhost:3000/api/v1/books/5
+``` 
 
 ### POST /api/v1/books 
 
@@ -95,7 +99,9 @@ score  : 5
 
 I simply do this : 
 
-```curl -X POST -H "Content-Type: application/json" -d '{"title":"Pride and Prejudice", "author":"Jane Austen", "score":5}' http://localhost:3000/api/v1/books/``` 
+```
+curl -X POST -H "Content-Type: application/json" -d '{"title":"Pride and Prejudice", "author":"Jane Austen", "score":5}' http://localhost:3000/api/v1/books/
+``` 
 
 _NOTE: `socre` must be an integer and this is why I didn't put it inside quotation marks._.
 
@@ -103,7 +109,9 @@ _NOTE: `socre` must be an integer and this is why I didn't put it inside quotati
 
 This one, updates the information of a certain book. Imagine I read the _Pride and Prejudice_ for another time and I decide to score it 3 instead of 5. So, I just send this request to the API : 
 
-```curl -X PUT -H "Content-Type: application/json" -d '{"score":3}' http://localhost:3000/api/v1/books/1``` 
+```
+curl -X PUT -H "Content-Type: application/json" -d '{"score":3}' http://localhost:3000/api/v1/books/1
+``` 
 
 _NOTE: It will return the new JSON in the terminal_. 
 
@@ -111,6 +119,8 @@ _NOTE: It will return the new JSON in the terminal_.
 
 This one, destroys an entity. For example, the book we added earlier is located in the spot number 1. So it has an _id_ of 1. We can easily do this : 
 
-```curl -X DELETE http://localhost:3000/api/v1/books/1``` 
+```
+curl -X DELETE http://localhost:3000/api/v1/books/1
+``` 
 
 And when you request for that id, you'll get an error. 
