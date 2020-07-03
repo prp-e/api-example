@@ -8,4 +8,19 @@ class Api::V1::BooksController < ApplicationController
         @book = Book.find(params[:id])
         render json: @book 
     end 
+
+    def create
+        @book = Book.new(book_params)
+        if @book.save 
+            render json: @book
+        else 
+            render error: {error: "Could not save the book"}, status: 400 
+        end 
+    end 
+
+
+    private
+    def book_params
+        params.require().permit(:title, :author, :score)
+    end 
 end
